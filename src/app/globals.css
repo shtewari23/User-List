@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+/* Add this to your CSS file or in a <style> block */
+.group:hover .hover-details {
+  opacity: 1;
+  text-align: center;
+}
+@keyframes fadeInWord {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text {
+  display: inline-block;
+  animation: fadeInWord 1s forwards;
+}
